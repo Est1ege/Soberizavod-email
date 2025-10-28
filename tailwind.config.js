@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: ['src/**/*.html'],
   theme: {
@@ -13,6 +12,10 @@ export default {
         'ttoctosquares': ['TTOctosquares', 'Courier New', 'Courier', 'monospace'],
         'blender': ['Blender Pro', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Arial', 'sans-serif'],
       },
+      screens: {
+        sm: {max: '700px'},
+        screen: {raw: 'screen'}, // Добавьте эту строку
+      }
     },
   },
   plugins: [],
