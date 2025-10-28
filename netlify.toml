@@ -1,0 +1,6 @@
+[build]
+  command = "npm run build"
+  publish = "build_local"
+
+[build.environment]
+  NODE_VERSION = "22"
