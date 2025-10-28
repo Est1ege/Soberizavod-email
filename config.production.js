@@ -4,7 +4,7 @@ export default {
     templates: {
       source: 'src/templates',
       destination: {
-        path: 'build_production',
+        path: 'build',
       },
     },
   },
