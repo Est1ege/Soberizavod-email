@@ -17,6 +17,7 @@
       @font-face {
         font-family: 'TTOctosquares';
         font-style: normal;
+        font-weight: 400;
         src: 
         local('TTOctosquares Regular'), 
         local('TTOctosquares-Regular'), 
@@ -28,6 +29,7 @@
       @font-face {
         font-family: 'Blender Pro';
         font-style: normal;
+        font-weight: 500;
         src: local('Blender Pro Medium'), 
              local('BlenderPro-Medium'),
              url('https://est1ege.github.io/Soberizavod-email/fonts/BlenderPro-Medium.woff2') format('woff2');
@@ -38,6 +40,7 @@
       @font-face {
         font-family: 'Blender Pro';
         font-style: normal;
+        font-weight: 700;
         src: local('Blender Pro Bold'), 
              local('BlenderPro-Bold'),
              url('https://est1ege.github.io/Soberizavod-email/fonts/BlenderPro-Bold.woff2') format('woff2');
@@ -52,7 +55,7 @@
   </style>
   <stack name="head" />
 </head>
-<body class="m-0 p-0 [word-break:break-word] [-webkit-font-smoothing:antialiased] {{ page.bodyClass || '' }}">
+<body class=" [word-break:break-word] [-webkit-font-smoothing:antialiased] {{ page.bodyClass || '' }}">
   <if condition="page.preheader">
     <div class="hidden">
       {{{ page.preheader }}}
