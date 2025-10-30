@@ -15,25 +15,25 @@ import fs from 'fs';
 // 3. Скопируйте SMTP данные
 // 4. Вставьте их ниже
 
-// const transporter = nodemailer.createTransport({
-//   host: 'sandbox.smtp.mailtrap.io',
-//   port: 2525,
-//   auth: {
-//     user: 'a9ecf8eef8db46', // Замените!
-//     pass: '11390f799d4d50'  // Замените!
-//   }
-// });
+const transporter = nodemailer.createTransport({
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  auth: {
+    user: 'a9ecf8eef8db46', // Замените!
+    pass: '11390f799d4d50'  // Замените!
+  }
+});
 
 // ===== МЕТОД 2: GMAIL =====
 // Раскомментируйте этот блок и закомментируйте Mailtrap выше
 
-const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: 'yestau.good@gmail.com',      // Замените!
-    pass: 'fixmafdbzsttxibf' // App Password из настроек Gmail
-  }
-});
+// const transporter = nodemailer.createTransport({
+//   service: 'gmail',
+//   auth: {
+//     user: 'yestau.good@gmail.com',      // Замените!
+//     pass: 'fixmafdbzsttxibf' // App Password из настроек Gmail
+//   }
+// });
 
 
 // ===== МЕТОД 3: YANDEX =====
@@ -59,7 +59,7 @@ let emailHtml;
 try {
   emailHtml = fs.readFileSync(
     // './build_local/src/templates/registration-confirmation-dynamic.html',
-    './test.html',
+    './registration-confirmation-dynamic.html',
     'utf8'
   );
 } catch (error) {

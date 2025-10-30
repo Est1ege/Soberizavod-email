@@ -7,6 +7,10 @@ export default {
         path: 'build',
       },
     },
+    assets: {
+      source: 'src/fonts',
+      destination: 'fonts',
+    },
   },
   inlineCSS: true,
   removeUnusedCSS: true,

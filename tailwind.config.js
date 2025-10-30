@@ -8,7 +8,6 @@ export default {
         'brand-dark-secondary': '#2a2f3e',
       },
       fontFamily: {
-        sans: ['Arial', 'sans-serif'],
         'ttoctosquares': ['TTOctosquares', 'Courier New', 'Courier', 'monospace'],
         'blender': ['Blender Pro', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Arial', 'sans-serif'],
       },
