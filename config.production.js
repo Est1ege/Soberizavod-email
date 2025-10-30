@@ -1,24 +1,25 @@
+/*
+|-------------------------------------------------------------------------------
+| Production config                       https://maizzle.com/docs/environments
+|-------------------------------------------------------------------------------
+|
+| This is the production configuration that Maizzle will use when you run the
+| `npm run build` command. Settings here will be merged on top of the base
+| `config.js`, so you only need to add the options that are changing.
+|
+*/
+
+/** @type {import('@maizzle/framework').Config} */
 export default {
   build: {
-    content: ['src/**/*.html'],
-    templates: {
-      source: 'src/templates',
-      destination: {
-        path: 'build',
-      },
-    },
-    assets: {
-      source: 'src/fonts',
-      destination: 'fonts',
+    output: {
+      path: 'build_production',
     },
   },
-  inlineCSS: true,
-  removeUnusedCSS: true,
-  shorthandCSS: true,
-  prettify: false,
-  minify: {
-    minifyCSS: true,
-    minifyJS: true,
-    removeComments: true,
+  css: {
+    inline: true,
+    purge: true,
+    shorthand: true,
   },
+  prettify: true,
 }

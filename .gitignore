@@ -1,36 +1,3 @@
-# Dependencies
-node_modules/
-package-lock.json
-yarn.lock
-
-# Build output
-build/
-build_local/
-dist/
-.cache/
-
-# Environment variables
-.env
-.env.local
-.env.production
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# Logs
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Netlify
-.netlify/
+.idea
+.vscode
+node_modules

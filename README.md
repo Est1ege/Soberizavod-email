@@ -1,58 +1,48 @@
-# Email-шаблоны Соберизавод
+<div align="center">
+  <p>
+    <a href="https://maizzle.com" target="_blank">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://github.com/maizzle/maizzle/raw/master/.github/logo-dark.svg">
+        <img alt="Maizzle Starter" src="https://github.com/maizzle/maizzle/raw/master/.github/logo-light.svg" width="300" height="225" style="max-width: 100%;">
+      </picture>
+    </a>
+  </p>
+  <p>Quickly build HTML emails with Tailwind CSS</p>
+<div>
 
-Этот проект содержит HTML email-шаблоны для интернет-магазина Соберизавод, созданные с использованием фреймворка Maizzle.
+  [![Version][npm-version-shield]][npm]
+  [![Build][github-ci-shield]][github-ci]
+  [![Downloads][npm-stats-shield]][npm-stats]
+  [![License][license-shield]][license]
 
-## 📧 Доступные шаблоны
+  </div>
+</div>
 
-### 1. Подтверждение регистрации
-- **Файл статический**: `registration-confirmation.html`
-- **Файл динамический**: `registration-confirmation-dynamic.html`
-- **Назначение**: Отправляется новым пользователям после успешной регистрации
+## Getting Started
 
-## 🚀 Быстрый старт
+Run this command and follow the prompts:
 
-### Установка зависимостей
-npm install
+```bash
+npx create-maizzle
+```
 
-### Режим разработки
-npm run dev
+## Documentation
 
-### Сборка для продакшена
-npm run build
+Maizzle documentation is available at https://maizzle.com
 
-## 📝 Использование динамических переменных
+## Issues
 
-Шаблон использует следующие переменные:
-- user.fullName
-- user.username
-- user.email
-- user.phone
-- registrationDate
-- loginUrl
-- manager.name
-- manager.phone
-- manager.mobile
+Please open all issues in the [framework repository](https://github.com/maizzle/framework).
 
-## 🎨 Кастомизация
+## License
 
-Цвета бренда настроены в tailwind.config.js:
-- brand-blue: #4a9eff
-- brand-dark: #1a1f2e
+The Maizzle framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-## 📮 Интеграция
-
-Готовые HTML-файлы находятся в папке build_production/ после сборки.
-Вы можете интегрировать их с любым почтовым сервисом (Nodemailer, PHPMailer, Flask-Mail и т.д.)
-
-## ✨ Особенности
-
-- ✅ Адаптивный дизайн
-- ✅ Инлайн CSS
-- ✅ Поддержка всех популярных почтовых клиентов
-- ✅ Оптимизирован для Gmail, Outlook, Apple Mail
-- ✅ Темный header и footer
-- ✅ Кнопка CTA
-- ✅ Карточка менеджера
-- ✅ QR-код
-
-© 2025 Соберизавод
+[npm]: https://www.npmjs.com/package/@maizzle/framework
+[npm-stats]: https://npm-stat.com/charts.html?package=%40maizzle%2Fframework&from=2019-03-27
+[npm-version-shield]: https://img.shields.io/npm/v/@maizzle/framework.svg
+[npm-stats-shield]: https://img.shields.io/npm/dt/@maizzle/framework.svg?color=6875f5
+[github-ci]: https://github.com/maizzle/framework/actions
+[github-ci-shield]: https://github.com/maizzle/framework/actions/workflows/nodejs.yml/badge.svg
+[license]: ./LICENSE
+[license-shield]: https://img.shields.io/npm/l/@maizzle/framework.svg?color=0e9f6e

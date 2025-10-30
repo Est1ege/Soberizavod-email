@@ -1,26 +1,12 @@
 {
-  "name": "soberizavod-emails",
-  "version": "1.0.0",
-  "description": "Email templates for Soberizavod online store",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "maizzle serve",
-    "build": "maizzle build production",
-    "build:local": "maizzle build"
+    "build": "maizzle build production"
   },
-  "keywords": [
-    "email",
-    "html",
-    "maizzle",
-    "soberizavod"
-  ],
-  "author": "Soberizavod",
-  "license": "MIT",
   "dependencies": {
-    "@maizzle/framework": "^5.0.0",
-    "nodemailer": "^7.0.10"
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.4.0"
+    "@maizzle/framework": "latest",
+    "tailwindcss-preset-email": "latest"
   }
 }
